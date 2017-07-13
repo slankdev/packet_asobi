@@ -4,7 +4,7 @@ CC = gcc
 CFLAGS =
 
 all:
-	$(CC) $(CFLAGS) recv.c
-	$(CC) $(CFLAGS) send.c
+	$(CC) $(CFLAGS) recv.c -o recv.out
+	$(CC) $(CFLAGS) send.c -o send.out
 
 

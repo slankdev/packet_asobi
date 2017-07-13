@@ -1,5 +1,6 @@
 
 #include "packet.h"
+#define IFNAME "wlp2s0"
 
 int main()
 {
@@ -15,7 +16,7 @@ int main()
     0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
     0x00, 0x00, 0x00, 0x00,
   };
-  int fd = open_socket("lo");
+  int fd = open_socket(IFNAME);
   send_packet(fd, data, sizeof(data));
   hexdump(data, sizeof(data));
 }
