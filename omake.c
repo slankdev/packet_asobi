@@ -93,6 +93,7 @@ void analyze_ip(void* p, size_t l)
 		  break;
 	}
 }
+
 void analyze_eth(void* p, size_t l)
 {
 	struct Eth_Hdr* eh = (struct Eth_Hdr*)(p);
